@@ -1,5 +1,5 @@
 #include <Python.h>
-
+#include <stdio.h>
 /**
  * print_python_list_info - prints info about python list
  * @p: pointer to python list
@@ -23,4 +23,4 @@ void print_python_list_info(PyObject *p)
 		printf("Type of element %d: %s\n", i, Py_TYPE(item)->tp_name);
 	}
 }
-``
+
