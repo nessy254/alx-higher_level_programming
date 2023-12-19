@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-a square module
+0-square.py is square module
 
-that has a square class
+Containing square class
 """
 
 
 class Square:
-
+    """
+    This is an empty class
+    """
     pass
