@@ -3,11 +3,13 @@
 """
 defines a rectangle by a private instance attribute width and height
 """
+
 class Rectangle:
     """The defined class Rectangle"""
     def __init__(self, width = 0, height = 0):
-        self.__width = width
-        self.__height = height
+        """Initialized rectangle"""
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
