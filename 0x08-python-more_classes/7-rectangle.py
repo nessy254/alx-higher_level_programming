@@ -5,12 +5,13 @@ Defines a class Rectangle
 
 
 class Rectangle:
-    """the class rectangle"""
+    """Represention of a rectangle"""
+
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize the Rectangle"""
+        """Initialize a Rectangle"""
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -31,12 +32,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get height"""
+        """Get the height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Set height"""
+        """Set the height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -48,18 +49,18 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        """perimeter of the rectangle"""
+        """Return the perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """representation of the rectangle"""
+        """Return the printable representation of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return ""
         rect = []
         for i in range(self.__height):
-            [rect.append("#") for j in range(self.__width)]
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
         return "".join(rect)
