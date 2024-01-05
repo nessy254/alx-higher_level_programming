@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-defines class rectangle by a private instance w and h
+defines class rectangle
 """
 
 class Rectangle:
