@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-
 """
 defines a rectangle by a private instance attribute width and height
 """
 
 class Rectangle:
     """The defined class Rectangle"""
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initialized rectangle"""
         self.width = width
         self.height = height
@@ -27,7 +26,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """get height"""
+        """geit height"""
         return self.__height
 
     @height.setter
