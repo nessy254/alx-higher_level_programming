@@ -8,6 +8,7 @@ class Rectangle:
     """the class rectangle"""
 
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initialize the Rectangle"""
         self.width = width
@@ -64,7 +65,7 @@ class Rectangle:
         return "".join(rect)
 
     def __repr__(self):
-        """Return the string representation of the rectangle"""
+        """Return the string representation of therectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
