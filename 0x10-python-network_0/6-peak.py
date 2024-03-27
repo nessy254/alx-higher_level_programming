@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module that contains a function that finds a peak in a list of unsorted integers
+module contains a function that finds a peak in a list of unsorted integers
 """
 
 
